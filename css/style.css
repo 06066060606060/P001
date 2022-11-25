@@ -9,8 +9,14 @@
   font-family: 'Satoshi', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 :root {
   --bg-color: #2F42EB;
+}
+
+.mycolor{
+  background: rgb(115,122,255);
+  background: linear-gradient(90deg, rgba(115,122,255,1) 0%, rgba(47,66,235,1) 100%);
 }
