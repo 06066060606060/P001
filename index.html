@@ -32,7 +32,6 @@
   <navbar></navbar>
   <header></header> 
   <protection></protection>
-  <vigilance></vigilance>
   <extention></extention>
   <navigateurs></navigateurs>
   <contact></contact>
@@ -62,16 +61,6 @@
   .then(data => {
     document.querySelector("protection").innerHTML = data;
   });
-
-  fetch("./vigilance.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("vigilance").innerHTML = data;
-  });
-
-
 
   fetch("./extention.html")
   .then(response => {

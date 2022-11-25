@@ -1,32 +1,134 @@
-
 <footer aria-label="Site Footer" class="bg-white">
   <div class="container px-16 py-4 mx-auto pt-16 pb-6 sm:px-6 lg:px-8">
-   
-
     <div class="mt-16 border-t border-gray-100 pt-6 sm:flex sm:items-center sm:justify-between">
       <img src="./assets/logofoot.png">
-
       <ul class="mt-4 items-center flex justify-center gap-6 sm:mt-0 sm:justify-start">
-
-
         <li>
-          <a href="/" rel="noreferrer" target="_blank" class="text-gray-700 transition text-xs md:text-base  hover:text-gray-700/75">
-Confidentialité
-          </a>
+          <div x-data="{ modelOpen: false }">
+
+            <button @click="modelOpen =!modelOpen" id="primaryButton"
+            class="text-gray-700 transition text-xs md:text-base hover:text-gray-700/75">
+            Confidentialité
+          </button>
+        
+            <div x-cloak x-show="modelOpen" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+                aria-modal="true">
+                <div class="flex items-end justify-center px-4 text-center md:items-center sm:block sm:p-0">
+                    <div x-cloak @click="modelOpen = false" x-show="modelOpen"
+                        x-transition:enter="transition ease-out duration-300 transform" x-transition:enter-start="opacity-0"
+                        x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200 transform"
+                        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                        class="fixed inset-0 transition-opacity bg-gray-900 bg-opacity-60" aria-hidden="true"></div>
+        
+                    <div x-cloak x-show="modelOpen" x-transition:enter="transition ease-out duration-300 transform"
+                        x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                        x-transition:leave="transition ease-in duration-200 transform"
+                        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                        x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        class="inline-block pt-8 overflow-hidden transition-all transform rounded-lg 2xl:max-w-2xl">
+                        <section class="">
+        
+                            <div class="w-full max-w-md px-20 py-8 space-y-3 text-gray-100 bg-white rounded-xl">
+                                <img class="p-2 rounded" src="/img/logo.png" alt="logo">
+        
+        
+                               
+                              
+                            </div>
+        
+                        </section>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
         </li>
 
         </li>
 
         <li>
-          <a href="/" rel="noreferrer" target="_blank" class="text-gray-700 transition text-xs md:text-base hover:text-gray-700/75">
-      Conditions d'utilisations
-          </a>
+          <div x-data="{ modelOpen: false }">
+
+            <button @click="modelOpen =!modelOpen" id="primaryButton"
+            class="text-gray-700 transition text-xs md:text-base hover:text-gray-700/75">
+            Conditions d'utilisations
+          </button>
+        
+            <div x-cloak x-show="modelOpen" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+                aria-modal="true">
+                <div class="flex items-end justify-center px-4 text-center md:items-center sm:block sm:p-0">
+                    <div x-cloak @click="modelOpen = false" x-show="modelOpen"
+                        x-transition:enter="transition ease-out duration-300 transform" x-transition:enter-start="opacity-0"
+                        x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200 transform"
+                        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                        class="fixed inset-0 transition-opacity bg-gray-900 bg-opacity-60" aria-hidden="true"></div>
+        
+                    <div x-cloak x-show="modelOpen" x-transition:enter="transition ease-out duration-300 transform"
+                        x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                        x-transition:leave="transition ease-in duration-200 transform"
+                        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                        x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        class="inline-block pt-8 overflow-hidden transition-all transform rounded-lg 2xl:max-w-2xl">
+                        <section class="">
+        
+                            <div class="w-full max-w-md px-20 py-8 space-y-3 text-gray-100 bg-white rounded-xl">
+                                <img class="p-2 rounded" src="/img/logo.png" alt="logo">
+        
+        
+                               
+                              
+                            </div>
+        
+                        </section>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
         </li>
 
         <li>
-          <a href="/" rel="noreferrer" target="_blank" class="text-gray-700 transition text-xs md:text-base hover:text-gray-700/75">
-          Mentions légales
-          </a>
+          <div x-data="{ modelOpen: false }">
+
+            <button @click="modelOpen =!modelOpen" id="primaryButton"
+            class="text-gray-700 transition text-xs md:text-base hover:text-gray-700/75">
+            Mentions Légales
+          </button>
+        
+            <div x-cloak x-show="modelOpen" class="fixed inset-0 z-50 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+                aria-modal="true">
+                <div class="flex items-end justify-center px-4 text-center md:items-center sm:block sm:p-0">
+                    <div x-cloak @click="modelOpen = false" x-show="modelOpen"
+                        x-transition:enter="transition ease-out duration-300 transform" x-transition:enter-start="opacity-0"
+                        x-transition:enter-end="opacity-100" x-transition:leave="transition ease-in duration-200 transform"
+                        x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0"
+                        class="fixed inset-0 transition-opacity bg-gray-900 bg-opacity-60" aria-hidden="true"></div>
+        
+                    <div x-cloak x-show="modelOpen" x-transition:enter="transition ease-out duration-300 transform"
+                        x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100"
+                        x-transition:leave="transition ease-in duration-200 transform"
+                        x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
+                        x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
+                        class="inline-block pt-8 overflow-hidden transition-all transform rounded-lg 2xl:max-w-2xl">
+                        <section class="">
+        
+                            <div class="w-full max-w-md px-20 py-8 space-y-3 text-gray-100 bg-white rounded-xl">
+                                <img class="p-2 rounded" src="/img/logo.png" alt="logo">
+        
+        
+                               
+                              
+                            </div>
+        
+                        </section>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
         </li>
         <li>
           <button
@@ -34,18 +136,20 @@ Confidentialité
             type="submit">
             Contactez-nous
           </button>
-    </li>
+        </li>
       </ul>
     </div>
   </div>
 </footer>
 <style>
-  .mcolor{
-  background: rgb(115,122,255);
-  background: linear-gradient(90deg, rgba(115,122,255,1) 0%, rgba(47,66,235,1) 100%);
-}
-.mcolor:active {
-  background: rgba(47,66,235,1);
-  background: linear-gradient(90deg,rgba(47,66,235,1)  0%, rgba(115,122,255,1) 100%);
-}
+  .mcolor {
+    background: rgb(115, 122, 255);
+    background: linear-gradient(90deg, rgba(115, 122, 255, 1) 0%, rgba(47, 66, 235, 1) 100%);
+  }
+
+  .mcolor:active {
+    background: rgba(47, 66, 235, 1);
+    background: linear-gradient(90deg, rgba(47, 66, 235, 1) 0%, rgba(115, 122, 255, 1) 100%);
+  }
 </style>
+
