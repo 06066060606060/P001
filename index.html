@@ -31,11 +31,10 @@
 <body class="min-h-screen">
   <navbar></navbar>
   <header></header> 
-  <phishing></phishing> 
-  <block1></block1>
-  <block2></block2>
-  <block3></block3>
-  <block4></block4>
+  <protection></protection>
+  <vigilance></vigilance>
+  <extention></extention>
+  <navigateurs></navigateurs>
   <contact></contact>
   <footer></footer>
 
@@ -56,36 +55,38 @@
     document.querySelector("header").innerHTML = data;
   });
 
-  fetch("./block1.html")
+  fetch("./protection.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("block1").innerHTML = data;
+    document.querySelector("protection").innerHTML = data;
   });
 
-  fetch("./block2.html")
+  fetch("./vigilance.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("block2").innerHTML = data;
+    document.querySelector("vigilance").innerHTML = data;
   });
 
-  fetch("./block3.html")
+
+
+  fetch("./extention.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("block3").innerHTML = data;
+    document.querySelector("extention").innerHTML = data;
   });
 
-  fetch("./block4.html")
+  fetch("./navigateurs.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("block4").innerHTML = data;
+    document.querySelector("navigateurs").innerHTML = data;
   });
 
   fetch("./contact.html")
