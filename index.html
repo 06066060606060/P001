@@ -25,16 +25,11 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://kit.fontawesome.com/59ecaaffaa.js" crossorigin="anonymous"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/stylex.css">
 </head>
 
 <body class="min-h-screen">
-  <navbar></navbar>
-  <header></header> 
-  <protection></protection>
-  <extention></extention>
-  <navigateurs></navigateurs>
-  <contact></contact>
+  <contenu></contenu> 
   <footer></footer>
 
 <script>
@@ -46,44 +41,12 @@
     document.querySelector("navbar").innerHTML = data;
   });
 
-  fetch("./header.html")
+  fetch("./contenu.html")
   .then(response => {
     return response.text()
   })
   .then(data => {
-    document.querySelector("header").innerHTML = data;
-  });
-
-  fetch("./protection.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("protection").innerHTML = data;
-  });
-
-  fetch("./extention.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("extention").innerHTML = data;
-  });
-
-  fetch("./navigateurs.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("navigateurs").innerHTML = data;
-  });
-
-  fetch("./contact.html")
-  .then(response => {
-    return response.text()
-  })
-  .then(data => {
-    document.querySelector("contact").innerHTML = data;
+    document.querySelector("contenu").innerHTML = data;
   });
 
   fetch("./footer.html")
