@@ -1,82 +1,81 @@
 <nav x-data="{ isOpen: false }" class="shadow bg-[#F8F8F8] z-10 top-0 fixed w-full">
     <div class="container px-24 py-4 mx-auto">
-      <div class="lg:flex lg:items-center lg:justify-between">
-        <div class="flex items-center justify-between">     
-            <div class="flex">
-              <img src="assets/logo.png" alt="" class="flex mx-4 w-16 h-16 pt-1 z-10">
-              <a class="text-2xl font-black lg:text-3xl z-10 hover:text-gray-300 pt-4"
-                href="#">BILLUN</a>
+        <div class="lg:flex lg:items-center lg:justify-between">
+            <div class="flex items-center justify-between">
+                <div class="flex">
+                    <img src="assets/logo.png" alt="" class="flex mx-4 w-16 h-16 pt-1 z-10">
+                    <a class="text-2xl font-black lg:text-3xl z-10 hover:text-gray-300 pt-4" href="#">BILLUN</a>
+                </div>
+
+
+                <!-- Mobile menu button -->
+                <div class="flex lg:hidden z-10">
+                    <button x-cloak @click="isOpen = !isOpen" type="button"
+                        class="text-gray-400  hover:text-gray-600 focus:outline-none focus:text-gray-800"
+                        aria-label="toggle menu">
+                        <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+                        </svg>
+
+                        <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                </div>
             </div>
-     
 
-          <!-- Mobile menu button -->
-          <div class="flex lg:hidden z-10">
-            <button x-cloak @click="isOpen = !isOpen" type="button"
-              class="text-gray-400  hover:text-gray-600 focus:outline-none focus:text-gray-800"
-              aria-label="toggle menu">
-              <svg x-show="!isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
-              </svg>
-
-              <svg x-show="isOpen" xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor" stroke-width="2">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            </button>
-          </div>
-        </div>
-
-        <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
-        <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
-          class="absolute inset-x-0 mt-2 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out shadow-md lg:bg-transparent lg:shadow-none bg-black lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0">
-          <div class="-mx-4 lg:flex lg:items-center">
-            <a href="/"
-              class=" block mx-4 py-2 font-black text-gray-600 hover:text-[color:var(--bg-color)] ">Sécurité pour le Web</a>
-            <a href="index2.html"
-              class=" block mx-4 py-2 mt-4 font-black  lg:mt-0 mypurple   ">Sécurité pour E-mail</a>
-            <a href="#download"
-              class=" block mx-4 mt-4 py-3 px-8 font-black lg:mt-0 text-gray-50 bg-[#EE007E] hover:text-gray-900 rounded-3xl shadow-2xl max-w-[250px]">Reservez une demo ></a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </nav>
-  
-
-<section class="bloparent">
-    <div class="shape-blob h-[600px] w-[480px] md:h-[650px] md:w-[980px]"></div>
-    <div class="container p-6 mx-auto">
-        <div class="body-font overflow-hidden pb-24">
-            <div class="container px-5 py-18 mx-auto">
-                <div class="w-full mx-auto flex flex-wrap mt-48 md:justify-center">
-                    <div class="lg:w-[50%] w-full lg:py-6  mb-6 lg:mb-0 ">
-                        <h1 class="flex flex-col text-3xl md:text-5xl font-extrabold mb-4 space-y-4 text-white">
-                            <div>PROTÉGEZ-VOUS <span style="color: #EE007E">FACE</span></div>
-                            <div>AUX <span style="color: #EE007E">EMAILS </span></div>
-                            <div>FRAUDULEUX</div>
-                        </h1>
-                        <P class="flex">
-                            <span class="py-8 font-bold text-left text-lg md:text-2xl text-white">L'email est le premier
-                                vecteur de
-                                <span style="color: #EE007E">cyber attaque </span><br> en entreprise.</span>
-                        </P>
-                        <div class="flex pt-4">
-                            <a href="https://chrome.google.com/webstore/detail/billun/ecodhgndejkcckkabdnigikdcdhchfgc">
-                                <button
-                                    class="flex mr-auto text-white font-bold bg-[#EE007E] border-0 py-3 px-12 focus:outline-none rounded-full shadow shadow-gray-400"><span
-                                        class="">Réserver une démo ></span> </button>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="pt-16">
-                        <img class="object-cover object-center" alt="hero" src="./assets/computer.gif">
-                    </div>
+            <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
+            <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
+                class="absolute inset-x-0 mt-2 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out shadow-md lg:bg-transparent lg:shadow-none bg-black lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0">
+                <div class="-mx-4 lg:flex lg:items-center">
+                    <a href="/"
+                        class=" block mx-4 py-2 font-black text-gray-600 hover:text-[color:var(--bg-color)] ">Sécurité
+                        pour le Web</a>
+                    <a href="index2.html" class=" block mx-4 py-2 mt-4 font-black  lg:mt-0 mypurple   ">Sécurité pour
+                        E-mail</a>
+                    <a href="#download"
+                        class=" block mx-4 mt-4 py-3 px-8 font-black lg:mt-0 text-gray-50 bg-[#EE007E] hover:text-gray-900 rounded-3xl shadow-2xl max-w-[250px]">Reservez
+                        une demo ></a>
                 </div>
             </div>
         </div>
     </div>
+</nav>
+
+
+
+<section class="container p-6 mx-auto flex flex-col md:flex-row my-12 justify-evenly">
+    <div class="flex flex-col pt-24 mx-auto  md:mx-0">
+        <h1 class="flex flex-col text-3xl md:text-5xl font-extrabold mb-4 space-y-4 text-white myshadowDark">
+            <div>PROTÉGEZ-VOUS <span style="color: #EE007E">FACE</span></div>
+            <div>AUX <span style="color: #EE007E">EMAILS </span></div>
+            <div>FRAUDULEUX</div>
+        </h1>
+        <P class="flex">
+            <span class="py-8 font-bold text-left text-lg md:text-2xl text-white myshadowDark">L'email est le
+                premier
+                vecteur de
+                <span style="color: #EE007E">cyber attaque </span><br> en entreprise.</span>
+        </P>
+        <div class="flex pt-4">
+            <a href="https://chrome.google.com/webstore/detail/billun/ecodhgndejkcckkabdnigikdcdhchfgc">
+                <button
+                    class="flex mr-auto text-white font-bold bg-[#EE007E] border-0 py-3 px-12 focus:outline-none rounded-full shadow shadow-gray-400"><span
+                        class="">Réserver une démo ></span> </button>
+            </a>
+        </div>
+    </div>
+
+    <div class="flex">
+        <div class="pt-24 mx-auto md:mx-0">
+            <img class="object-cover object-center" alt="hero" src="./assets/computer.gif">
+        </div>
+    </div>
+
 </section>
+
 
 <div class="container p-6 mx-auto">
     <section class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
@@ -124,7 +123,7 @@
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 lg:w-1/3">
                     <div
-                        class="h-full bg-white bg-opacity-75 px-8 pt-6 pb-8 rounded-2xl overflow-hidden shadow shadow-gray-400 relative">
+                        class="h-full bg-white bg-opacity-75 pl-12 pt-6 pb-8 rounded-2xl overflow-hidden shadow shadow-gray-400 relative">
                         <img class="object-cover object-center" alt="hero" src="./assets/API.png">
                         <h1 class="text-lg text-left py-4 font-black">Sécurisez vos <span
                                 class="text-[#7923E4]">échanges</span> email et vos <span
@@ -165,52 +164,53 @@
         </div>
     </section>
 
-    <section class="mx-auto max-w-screen-xl px-4 pt-8 sm:px-6 lg:px-8 bloparent2">
-        <div class="container px-5 py-18 mx-auto">
-            <div class="w-full mx-auto flex mt-12 justify-center align-middle items-center">
-                <div>
-                    <img class="object-cover object-center switch" alt="hero" src="./assets/computer.gif">
-                </div>
-                <div class="lg:w-[50%] w-full lg:py-6  mb-6 lg:mb-0 ">
-                    <ul role="list" class="mt-4 pt-6">
-                        <li class="flex">
-                            <div class="flex my-4">
-                                <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
-                            </div>
-                            <span class="ml-3 font-medium text-left mt-5">Profitez d'un web plus sûr</span>
-                        </li>
-                        <li class="flex">
-                            <div class=" my-4 ">
-                                <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
-                            </div>
-                            <span class="ml-3 font-medium text-left mt-5">Naviguez seulement sur des sites web
-                                certifiés </span>
-                        </li>
-                        <li class="flex">
-                            <div class=" my-4  ">
-                                <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
-                            </div>
-                            <span class="ml-3 font-medium text-left mt-5">Protégez vos données personnelles</span>
-                        </li>
-                        <li class="flex">
-                            <div class=" my-4 ">
-                                <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
-                            </div>
-                            <span class="ml-3 font-medium text-left mt-5">Extention gratuite & disponible sur tous les
-                                navigateurs</span>
-                        </li>
-                        <li class="flex">
-                            <div class=" my-4 ">
-                                <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
-                            </div>
-                            <span class="ml-3 font-medium text-left mt-5">Compréhension facilitée grâce au code
-                                couleurs</span>
-                        </li>
-                    </ul>
-                </div>
+
+    <section class="container p-6 mx-auto flex flex-col md:flex-row my-12 justify-evenly">
+        <div class="flex">
+            <div>
+                <img class="object-cover object-center switch" alt="hero" src="./assets/computer.gif">
             </div>
         </div>
+        <div class="flex">
+            <ul role="list" class="ml-12 mt-4 pt-6">
+                <li class="flex">
+                    <div class="flex my-4">
+                        <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
+                    </div>
+                    <span class="ml-3 font-medium text-left mt-5">Profitez d'un web plus sûr</span>
+                </li>
+                <li class="flex">
+                    <div class=" my-4 ">
+                        <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
+                    </div>
+                    <span class="ml-3 font-medium text-left mt-5">Naviguez seulement sur des sites web
+                        certifiés </span>
+                </li>
+                <li class="flex">
+                    <div class=" my-4  ">
+                        <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
+                    </div>
+                    <span class="ml-3 font-medium text-left mt-5">Protégez vos données personnelles</span>
+                </li>
+                <li class="flex">
+                    <div class=" my-4 ">
+                        <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
+                    </div>
+                    <span class="ml-3 font-medium text-left mt-5">Extention gratuite & disponible sur tous les
+                        navigateurs</span>
+                </li>
+                <li class="flex">
+                    <div class=" my-4 ">
+                        <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
+                    </div>
+                    <span class="ml-3 font-medium text-left mt-5">Compréhension facilitée grâce au code
+                        couleurs</span>
+                </li>
+            </ul>
+        </div>
+    
     </section>
+
 
 
 
@@ -228,11 +228,10 @@
 
 
 <style>
-
-.mypurple{
-    color: #6002E9;
-   color: linear-gradient(90deg, #6002E9 0%, #9F4FF7 100%);
-}
+    .mypurple {
+        color: #6002E9;
+        color: linear-gradient(90deg, #6002E9 0%, #9F4FF7 100%);
+    }
 
 
     .shape-blob {
