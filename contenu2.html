@@ -3,7 +3,7 @@
         <div class="lg:flex lg:items-center lg:justify-between">
             <div class="flex items-center justify-between">
                 <div class="flex">
-                    <img src="assets/logo.png" alt="" class="flex mx-4 w-16 h-16 pt-1 z-10">
+                    <img src="./assets/logo.png" alt="" class="flex mx-4 w-16 h-16 pt-1 z-10">
                     <a class="text-2xl font-black lg:text-3xl z-10 hover:text-gray-300 pt-4" href="#">BILLUN</a>
                 </div>
 
@@ -46,25 +46,30 @@
 
 
 
-<section class="container p-6 mx-auto flex flex-col md:flex-row my-12 justify-evenly">
-    <div class="flex flex-col pt-24 mx-auto  md:mx-0">
-        <h1 class="flex flex-col text-3xl md:text-5xl font-extrabold mb-4 space-y-4 text-white myshadowDark">
-            <div>PROTÉGEZ-VOUS <span style="color: #EE007E">FACE</span></div>
-            <div>AUX <span style="color: #EE007E">EMAILS </span></div>
-            <div>FRAUDULEUX</div>
-        </h1>
-        <P class="flex">
-            <span class="py-8 font-bold text-left text-lg md:text-2xl text-white myshadowDark">L'email est le
-                premier
-                vecteur de
-                <span style="color: #EE007E">cyber attaque </span><br> en entreprise.</span>
-        </P>
-        <div class="flex pt-4">
-            <a href="https://chrome.google.com/webstore/detail/billun/ecodhgndejkcckkabdnigikdcdhchfgc">
-                <button
-                    class="flex mr-auto text-white font-bold bg-[#EE007E] border-0 py-3 px-12 focus:outline-none rounded-full shadow shadow-gray-400"><span
-                        class="">Réserver une démo ></span> </button>
-            </a>
+<section class="container p-6 mx-auto flex flex-col lg:flex-row my-12 justify-evenly ">
+    <div class="myblob"></div>
+
+
+    <div class="flex flex-col pt-24 ">
+        <div class="div mx-auto ">
+            <h1 class="flex flex-col text-3xl md:text-5xl font-extrabold mb-4 space-y-4 text-white myshadowDark">
+                <div>PROTÉGEZ-VOUS <span style="color: #EE007E">FACE</span></div>
+                <div>AUX <span style="color: #EE007E">EMAILS </span></div>
+                <div>FRAUDULEUX</div>
+            </h1>
+            <P class="flex">
+                <span class="py-8 font-bold text-left text-lg md:text-2xl text-white myshadowDark">L'email est le
+                    premier
+                    vecteur de
+                    <span style="color: #EE007E">cyber attaque </span><br> en entreprise.</span>
+            </P>
+            <div class="flex pt-4">
+                <a href="https://chrome.google.com/webstore/detail/billun/ecodhgndejkcckkabdnigikdcdhchfgc">
+                    <button
+                        class="flex mr-auto text-white font-bold bg-[#EE007E] border-0 py-3 px-12 focus:outline-none rounded-full shadow shadow-gray-400"><span
+                            class="">Réserver une démo ></span> </button>
+                </a>
+            </div>
         </div>
     </div>
 
@@ -166,13 +171,14 @@
 
 
     <section class="container p-6 mx-auto flex flex-col md:flex-row my-12 justify-evenly">
+        <div class="myblob2"></div>
         <div class="flex">
             <div>
                 <img class="object-cover object-center switch" alt="hero" src="./assets/computer.gif">
             </div>
         </div>
         <div class="flex">
-            <ul role="list" class="ml-12 mt-4 pt-6">
+            <ul role="list" class="ml-12 mt-4 pt-6 text-white myshadowDark">
                 <li class="flex">
                     <div class="flex my-4">
                         <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
@@ -208,7 +214,7 @@
                 </li>
             </ul>
         </div>
-    
+
     </section>
 
 
@@ -217,8 +223,8 @@
 </div>
 
 <section class="flex flex-col justify-center items-center w-full mt-12 mpurple h-96 mx-auto text-white">
-    <div class="flex flex-col justify-center items-center">
-        <hi class="text-4xl mx-auto pb-8 font-extrabold">Contactez-Nous !</hi>
+    <div class="flex flex-col justify-center items-center myshadowDark">
+        <hi class="text-4xl mx-auto pb-8 font-extrabold ">Contactez-Nous !</hi>
         <button class="px-12 mx-4 py-3 border border-gray-400 rounded-full">
             Contactez Nous Maintenant >
         </button>
@@ -234,41 +240,84 @@
     }
 
 
-    .shape-blob {
-        z-index: -1;
+    .myblob {
+        position: absolute;
         background: #6002E9;
         background: linear-gradient(90deg, #6002E9 0%, #9F4FF7 100%);
-        border-radius: 29% 71% 29% 75% / 56% 66% 36% 48%;
+        border-radius: 66% 86% 89% 55% / 60% 100% 50% 90%;
         animation:
-            transform 20s ease-in-out infinite both alternate,
-            movement_one 40s ease-in-out infinite both;
-        position: absolute;
-        left: 0%;
-        top: 0%;
+            transform 10s ease-in-out infinite both alternate,
+            movement_one 20s ease-in-out infinite both;
+        width: 750px;
+        height: 550px;
+        z-index: -1;
+        right: 50%;
     }
 
-    .shape-blob2 {
-        z-index: -1;
+    .myblob2 {
+        position: absolute;
         background: #6002E9;
         background: linear-gradient(90deg, #6002E9 0%, #9F4FF7 100%);
-        border-radius: 29% 71% 29% 75% / 56% 66% 36% 48%;
+        border-radius: 66% 86% 89% 55% / 60% 100% 50% 90%;
         animation:
-            transform 20s ease-in-out infinite both alternate,
-            movement_one 40s ease-in-out infinite both;
-        position: absolute;
-        left: 0%;
-        bottom: 0%;
+            transform 10s ease-in-out infinite both alternate,
+            movement_one 20s ease-in-out infinite both;
+        width: 750px;
+        height: 450px;
+        z-index: -1;
+        left: 45%;
+
     }
+
+    @media screen and (max-width: 1024px) {
+        .myblob {
+            position: absolute;
+        background: #6002E9;
+        background: linear-gradient(90deg, #6002E9 0%, #9F4FF7 100%);
+        border-radius: 66% 86% 89% 55% / 60% 100% 50% 90%;
+        animation:
+            transform 10s ease-in-out infinite both alternate,
+            movement_one 20s ease-in-out infinite both;
+        width: 750px;
+        height: 550px;
+        z-index: -1;
+        top : 0;
+        right: 25%;
+        }
+
+        .myblob2 {
+        margin-left: 20px;
+        }
+
+    }
+
+    @media screen and (max-width: 768px) {
+        .myblob2 {
+            position: absolute;
+        background: #6002E9;
+        background: linear-gradient(90deg, #6002E9 0%, #9F4FF7 100%);
+        border-radius: 66% 86% 89% 55% / 60% 100% 50% 90%;
+        animation:
+            transform 10s ease-in-out infinite both alternate,
+            movement_one 20s ease-in-out infinite both;
+        width: 750px;
+        height: 450px;
+        z-index: -1;
+        margin-top: 450px;
+        left: 0;
+        }
+    }
+        
+
 
     @keyframes transform {
 
         0%,
         100% {
-            border-radius: 32% 73% 27% 73% / 58% 68% 38% 50%;
+            border-radius: 66% 86% 89% 55% / 60% 100% 50% 90%;
         }
 
     }
-
 
     @keyframes movement_one {
 
