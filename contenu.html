@@ -1,15 +1,15 @@
 <nav x-data="{ isOpen: false }" class="shadow bg-[#F8F8F8] z-50 top-0 fixed w-full">
-    <div class="container px-24 py-4 mx-auto">
+    <div class="container md:px-24 py-4 mx-auto">
         <div class="lg:flex lg:items-center lg:justify-between">
             <div class="flex items-center justify-between">
                 <div class="flex">
-                    <img src="assets/logo.png" alt="" class="flex mx-4 w-16 h-16 pt-1 z-10">
+                    <img src="./assets/logo.png" alt="" class="flex mx-4 w-16 h-16 pt-1 z-10">
                     <a class="text-2xl font-black lg:text-3xl z-10 hover:text-gray-300 pt-4" href="/">BILLUN</a>
                 </div>
 
 
                 <!-- Mobile menu button -->
-                <div class="flex lg:hidden z-10">
+                <div class="flex lg:hidden z-10 mr-4">
                     <button x-cloak @click="isOpen = !isOpen" type="button"
                         class="text-gray-400  hover:text-gray-600 focus:outline-none focus:text-gray-800"
                         aria-label="toggle menu">
@@ -32,7 +32,7 @@
                 <div class="-mx-4 lg:flex lg:items-center">
                     <a href="/" class=" block mx-4 py-2 font-black text-[color:var(--bg-color)] ">Sécurité pour le
                         Web</a>
-                    <a href="index2.html"
+                    <a href="secure_email"
                         class=" block mx-4 py-2 mt-4 font-black  lg:mt-0 text-gray-600  hover:text-[color:var(--bg-color)] ">Sécurité
                         pour E-mail</a>
                         <select title="lang" name="lang"
@@ -88,7 +88,7 @@
                             class="flex mt-8">
                             <button
                                 class=" flex mr-auto ml-2 text-white font-bold mycolor border-0 py-4 px-6 focus:outline-none hover:bg-indigo-600 rounded-full shadow-xl"><span
-                                    class="pt-1">OBTENEZ BILLUN POUR CHROME</span> <img class="ml-2 w-8 h-8"
+                                    class="pt-1 text-xs md:text-base">OBTENEZ BILLUN POUR CHROME</span> <img class="ml-2 w-8 h-8"
                                     src="./assets/chrome0.png" alt=""></button>
                         </a>
                     </div>
@@ -119,7 +119,7 @@
                 <p class="text-2xl font-black">Protection contre le phishing</p>
 
                 <div class="relative mt-1">
-                    <p class="mt-4 max-w-screen-xl text-xl font-medium text-black">
+                    <p class="mt-4 max-w-screen-xl text-sm md:text-lg font-medium text-black">
                         Le phishing (ou hameçonnage en français) est une technique <span
                             class="text-[#2F42EB] font-semibold">d’attaque qui vise à voler vos informations
                             personnelles</span>

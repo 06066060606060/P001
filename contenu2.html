@@ -1,5 +1,5 @@
 <nav x-data="{ isOpen: false }" class="shadow bg-[#F8F8F8] z-10 top-0 fixed w-full">
-    <div class="container px-24 py-4 mx-auto">
+    <div class="container md:px-24 py-4 mx-auto">
         <div class="lg:flex lg:items-center lg:justify-between">
             <div class="flex items-center justify-between">
                 <div class="flex">
@@ -9,7 +9,7 @@
 
 
                 <!-- Mobile menu button -->
-                <div class="flex lg:hidden z-10">
+                <div class="flex lg:hidden z-10 mr-4">
                     <button x-cloak @click="isOpen = !isOpen" type="button"
                         class="text-gray-400  hover:text-gray-600 focus:outline-none focus:text-gray-800"
                         aria-label="toggle menu">
@@ -30,8 +30,7 @@
             <div x-cloak :class="[isOpen ? 'translate-x-0 opacity-100 ' : 'opacity-0 -translate-x-full']"
                 class="absolute inset-x-0 mt-2 z-20 w-full px-6 py-4 transition-all duration-300 ease-in-out shadow-md lg:bg-transparent lg:shadow-none bg-black lg:mt-0 lg:p-0 lg:top-0 lg:relative lg:w-auto lg:opacity-100 lg:translate-x-0">
                 <div class="-mx-4 lg:flex lg:items-center">
-                    <a href="/"
-                        class=" block mx-4 py-2 font-black text-gray-600 hover:text-[color:var(--bg-color)] ">Sécurité
+                    <a href="/" class=" block mx-4 py-2 font-black text-gray-600 hover:text-[color:var(--bg-color)] ">Sécurité
                         pour le Web</a>
                     <a href="secure_email" class=" block mx-4 py-2 mt-4 font-black  lg:mt-0 mypurple   ">Sécurité pour
                         E-mail</a>
