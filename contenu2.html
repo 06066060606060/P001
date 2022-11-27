@@ -95,7 +95,7 @@
                 <p class="text-2xl font-black">Social Engineering</p>
 
                 <div class="relative mt-1">
-                    <p class="mt-4 mb-4 max-w-screen-xl text-xl font-medium text-black">
+                    <p class="mt-4 mb-4 max-w-screen-xl text-xl font-medium text-black ">
                         Le social engineering (ou ingénierie sociale en français) est une technique de manipulation qui
                         consiste pour un attaquant à extirper des informations à ses victimes sans qu’elles ne s’en
                         rendent compte, grâce à des techniques de persuasion et bien souvent en usurpant l’identité d’un
@@ -129,13 +129,12 @@
             <div class="flex flex-wrap -m-4">
                 <div class="p-4 lg:w-1/3">
                     <div
-                        class="h-full bg-white bg-opacity-75 pl-12 pt-6 pb-8 rounded-2xl overflow-hidden shadow shadow-gray-400 relative">
+                        class="h-full bg-white bg-opacity-75 px-8 pt-6 pb-8 rounded-2xl overflow-hidden shadow shadow-gray-400 relative">
                         <img class="object-cover object-center" alt="hero" src="./assets/API.png">
                         <h1 class="text-lg text-left py-4 font-black">Sécurisez vos <span
                                 class="text-[#7923E4]">échanges</span> email et vos <span
                                 class="text-[#7923E4]">données</span></h1>
-                        <p class="text-left leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
-                            jianbing microdosing tousled  jianbing microdosing tousled waistcoat.</p>
+                        <p class="text-left leading-relaxed mb-3 cropped">Quelles seraient les conséquences d’une perte de confidentialité de vos échanges emails ? Que se passerait-il si des attaquants avaient accès aux données que vous partagez, aux documents d’entreprise que vous envoyez et aux documents confidentiels que vous recevez ? Avec BILLUN, assurez-vous de sécuriser les échanges emails entre vos collaborateurs et entre votre organisation et l’extérieur. BILLUN veille à la confidentialité de vos échanges emails, de vos conversations et des données que vous partagez.</p>
                         <div x-data="{ modelOpen: false }">
 
                             <button @click="modelOpen =!modelOpen" id="primaryButton"
@@ -185,8 +184,7 @@
                         <img class="object-cover object-center" alt="hero" src="./assets/Phishing.png">
                         <h1 class="text-lg text-left py-4 font-black">Prémunissez-vous des risques <span
                                 class="text-[#7923E4]">d’usurpation d’identité</span></h1>
-                        <p class="text-left leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
-                            jianbing microdosing tousled waistcoat.</p>
+                        <p class="text-left leading-relaxed mb-3 cropped"> Un fondateur dirigeant appelle le responsable financier de son organisation pour lui demander le virement d’une grosse somme d’argent afin de finaliser une transaction. Le virement est effectué dans la panique et finalement, lorsque la tension retombe, on s’apperçoit que tout cela n’était qu’une arnaque et que des millions se sont envolés. BILLUN vérifie pour vous l’identité des expéditeurs vous envoyant des emails et vous averti lorsque l’identité supposée de l’émeteur n’est pas correcte. Assurez-vous ainsi d’avoir à faire aux bons interlocuteurs et prémunissez-vous des risques d’usurpation d’identité dans votre organisation.</p>
                             <div x-data="{ modelOpen: false }">
 
                                 <button @click="modelOpen =!modelOpen" id="primaryButton"
@@ -237,8 +235,7 @@
                         <img class="object-cover object-center" alt="hero" src="./assets/aide.png">
                         <h1 class="text-lg text-left py-4 font-black">Assurez-vous de ne pas cliquer sur un <span
                                 class="text-[#7923E4]">lien malveillant</span></h1>
-                        <p class="text-left leading-relaxed mb-3">Photo booth fam kinfolk cold-pressed sriracha leggings
-                            jianbing microdosing tousled waistcoat.</p>
+                        <p class="text-left leading-relaxed mb-3 cropped"> Le principal risque en cybersécurité, c’est là où vous cliquez. BILLUN vous avertie lorsqu’un lien contenu dans un email est suspect, dangereux ou frauduleux. Un code couleur simple pour vous permettre de détecter, en un clin d’oeil, si votre navigation est sécurisée. Ainsi, vous vous assurez de ne naviguer que sur des sites officiels et de confiance, tout en veillant à la confidentialité et à la sécurité de vos données.</p>
                             <div x-data="{ modelOpen: false }">
 
                                 <button @click="modelOpen =!modelOpen" id="primaryButton"
@@ -300,34 +297,31 @@
                     <div class="flex my-4">
                         <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
                     </div>
-                    <span class="ml-3 font-medium text-left mt-5">Profitez d'un web plus sûr</span>
+                    <span class="ml-3 font-medium text-left mt-5">API facile à intégrer sur tous les services de messagerie</span>
                 </li>
                 <li class="flex">
                     <div class=" my-4 ">
                         <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
                     </div>
-                    <span class="ml-3 font-medium text-left mt-5">Naviguez seulement sur des sites web
-                        certifiés </span>
+                    <span class="ml-3 font-medium text-left mt-5">Améliore la vigilance de vos collaborateurs </span>
                 </li>
                 <li class="flex">
                     <div class=" my-4  ">
                         <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
                     </div>
-                    <span class="ml-3 font-medium text-left mt-5">Protégez vos données personnelles</span>
+                    <span class="ml-3 font-medium text-left mt-5">Surveillance des connexion aux comptes</span>
                 </li>
                 <li class="flex">
                     <div class=" my-4 ">
                         <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
                     </div>
-                    <span class="ml-3 font-medium text-left mt-5">Extention gratuite & disponible sur tous les
-                        navigateurs</span>
+                    <span class="ml-3 font-medium text-left mt-5">Prémunissez-vous des principales attaques de phishing</span>
                 </li>
                 <li class="flex">
                     <div class=" my-4 ">
                         <img class="w-8 h-8 mr-4" src="./assets/checkr.png" alt="">
                     </div>
-                    <span class="ml-3 font-medium text-left mt-5">Compréhension facilitée grâce au code
-                        couleurs</span>
+                    <span class="ml-3 font-medium text-left mt-5">Sécurisez vos communications avec vos clients & prestataires</span>
                 </li>
             </ul>
         </div>
@@ -339,7 +333,7 @@
 
 </div>
 
-<section class="flex flex-col justify-center items-center w-full mt-12 mpurple h-96 mx-auto text-white">
+<section class="flex flex-col justify-center items-center w-full mt-12 mpurple h-72 mx-auto text-white">
     <div class="flex flex-col justify-center items-center ">
         <hi class="text-4xl mx-auto pb-8 font-extrabold myshadowDark">Contactez-Nous !</hi>
         <div x-data="{ modelOpen: false }">
@@ -365,43 +359,56 @@
                         x-transition:leave="transition ease-in duration-200 transform"
                         x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100"
                         x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
-                        class="inline-block pt-8 overflow-hidden transition-all transform rounded-lg 2xl:max-w-2xl">
+                        class="inline-block pt-8 overflow-hidden transition-all transform rounded-lg max-w-xl">
                         <div class="w-full pt-4 pb-8 space-y-3 text-gray-800 bg-white rounded-xl">
                             <i class="float-right fa fa-close fa-2x text-gray-600 mr-5" @click="modelOpen = false"></i>
                             <div class="flex justify-center pl-9">
                                 <img class="p-2 h-16 w-16 mx-auto" src="./assets/logo.png" alt="logo">
                             </div>
                             <h1 class="text-xl font-bold text-black px-20">CONTACTEZ-NOUS</h1>
-                            <form action="https://formsubmit.co/admin@billun.com" class="z-10 mt-6 text-lg pt-4 p-8"
-                                method="POST">
-                                <div class="flex">
-                                    <input type="text" name="nom" placeholder="Nom"
-                                        class="block w-[40%] px-5 py-3 mt-2 mr-8 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                    <input type="text" name="prénom" placeholder="Prenom"
-                                        class="block w-[40%] px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            <form action="https://formsubmit.co/admin@billun.com" class="z-10 mt-2 text-lg pt-4 p-8 ml-12"
+                            method="POST">
+                            <div class="flex">
+                                <input type="text" name="nom" placeholder="Nom" required
+                                    class="block w-[40%] px-5 py-2 mt-2 mr-8 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                <input type="text" name="prénom" placeholder="Prenom"
+                                    class="block w-[40%] px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+                            <div class="flex-1 mt-2 pt-2">
+                                <input type="text" name="société" placeholder="Société" required
+                                    class="block w-3/4 px-5 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+                            <div class="flex-1 mt-2 pt-2.5">
+                                <input type="email" name="email" placeholder="Email" required
+                                    class="block w-3/4 px-5 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+    
+                            <div class="flex-1 mt-2 pt-2">
+                                <input type="text" name="siteweb" placeholder="Lien vers votre site web" required
+                                    class="block w-3/4 px-5 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
+                            </div>
+    
+                            <div class="w-full mt-2 pt-2">
+                                <textarea name="message" required
+                                    class="block w-3/4 h-24 px-5 py-2 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl md:h-48  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40"
+                                    placeholder="Message"></textarea>
+                            </div>
+                                <div class="w-full mt-2 pt-2">
+                                    <div class="flex">
+                                        <input type="checkbox" name="operation" value="0" class="mb-20 mr-4" id="checkme"  onchange="displayRadioValue();">
+                                        <p class="text-left leading-relaxed text-xs">
+                                            J'accepte que <span class="text-[#2F42EB] font-semibold">Billun</span> traite mes
+                                            données afin de répondre à ma demande.*<br>
+                                            <br>
+                                            Pour plus d’informations, nous vous invitons à lire la <br><span
+                                                class="text-[#2F42EB] font-semibold" onclick="">Politique de
+                                                Confidentialité</span>, ou à envoyer un mail de demande d’information.
+                                        </p>
+                                    </div>
                                 </div>
-                                <div class="flex-1 mt-6 pt-2">
-                                    <input type="text" name="société" placeholder="Société"
-                                        class="block w-3/4 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                </div>
-                                <div class="flex-1 mt-6 pt-2.5">
-                                    <input type="email" name="email" placeholder="Email"
-                                        class="block w-3/4 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                </div>
-
-                                <div class="flex-1 mt-6 pt-2">
-                                    <input type="text" name="siteweb" placeholder="Lien vers votre site web"
-                                        class="block w-3/4 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                </div>
-
-                                <div class="w-full mt-6 pt-2">
-                                    <textarea name="message"
-                                        class="block w-3/4 h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-gray-200  rounded-xl md:h-48  focus:border-blue-800 focus:ring-blue-800 focus:outline-none focus:ring focus:ring-opacity-40"
-                                        placeholder="Message"></textarea>
-                                </div>
-                                <div class="flex flex-col items-center align-middle pt-6">
-                                    <button
-                                        class="w-3/4 px-6 py-3 mt-6 font-bold tracking-wide text-white capitalize transition-colors duration-300 transform mycolor rounded-full hover:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 shadow">
+                                <div class="flex flex-col items-center align-middle pt-2">
+                                    <button id="sendNew" disabled="disabled"
+                                        class="mr-12 w-3/4 px-6 py-2 mt-6 font-bold tracking-wide text-white capitalize transition-colors duration-300 transform mycolor rounded-full hover:bg-blue-800 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50 shadow">
                                         Envoyer le message
                                     </button>
                                 </div>
@@ -420,6 +427,16 @@
 
 
 <style>
+
+.cropped{
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    padding-bottom: 5px;
+
+}
+
     .mypurple {
         color: #6002E9;
         color: linear-gradient(90deg, #6002E9 0%, #a455f8 100%);
